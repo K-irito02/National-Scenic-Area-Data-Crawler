@@ -1,0 +1,19 @@
+{
+    "timestamp": "2025-03-05 01:05:22",
+    "node_id": "node1",
+    "task_type": "list",
+    "queue_status": {
+        "cities_urls": 0,
+        "list_urls": 21,
+        "detail_urls": 1113
+    },
+    "processed_status": {
+        "cities": 1,
+        "list": 4,
+        "detail": 0
+    },
+    "data_status": {
+        "cities": 25,
+        "attractions": 0
+    }
+}

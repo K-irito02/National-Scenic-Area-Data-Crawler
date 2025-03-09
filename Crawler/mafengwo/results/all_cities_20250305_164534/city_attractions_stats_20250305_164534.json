@@ -1,0 +1,152 @@
+[
+    {
+        "order": 1,
+        "city_id": "12700",
+        "city_name": "西藏",
+        "attraction_count": 292
+    },
+    {
+        "order": 2,
+        "city_id": "14387",
+        "city_name": "江苏",
+        "attraction_count": 294
+    },
+    {
+        "order": 3,
+        "city_id": "12703",
+        "city_name": "四川",
+        "attraction_count": 295
+    },
+    {
+        "order": 4,
+        "city_id": "12810",
+        "city_name": "广西",
+        "attraction_count": 293
+    },
+    {
+        "order": 5,
+        "city_id": "13732",
+        "city_name": "湖南",
+        "attraction_count": 293
+    },
+    {
+        "order": 6,
+        "city_id": "12720",
+        "city_name": "内蒙古",
+        "attraction_count": 286
+    },
+    {
+        "order": 7,
+        "city_id": "14103",
+        "city_name": "贵州",
+        "attraction_count": 289
+    },
+    {
+        "order": 8,
+        "city_id": "10208",
+        "city_name": "重庆",
+        "attraction_count": 244
+    },
+    {
+        "order": 9,
+        "city_id": "16215",
+        "city_name": "东北",
+        "attraction_count": 289
+    },
+    {
+        "order": 10,
+        "city_id": "14575",
+        "city_name": "浙江",
+        "attraction_count": 288
+    },
+    {
+        "order": 11,
+        "city_id": "14731",
+        "city_name": "湖北",
+        "attraction_count": 289
+    },
+    {
+        "order": 12,
+        "city_id": "14674",
+        "city_name": "广东",
+        "attraction_count": 290
+    },
+    {
+        "order": 13,
+        "city_id": "12938",
+        "city_name": "海南",
+        "attraction_count": 285
+    },
+    {
+        "order": 14,
+        "city_id": "14407",
+        "city_name": "河北",
+        "attraction_count": 291
+    },
+    {
+        "order": 15,
+        "city_id": "10099",
+        "city_name": "上海",
+        "attraction_count": 291
+    },
+    {
+        "order": 16,
+        "city_id": "12976",
+        "city_name": "山东",
+        "attraction_count": 287
+    },
+    {
+        "order": 17,
+        "city_id": "10065",
+        "city_name": "北京",
+        "attraction_count": 294
+    },
+    {
+        "order": 18,
+        "city_id": "12871",
+        "city_name": "福建",
+        "attraction_count": 296
+    },
+    {
+        "order": 19,
+        "city_id": "15508",
+        "city_name": "江西",
+        "attraction_count": 292
+    },
+    {
+        "order": 20,
+        "city_id": "12719",
+        "city_name": "安徽",
+        "attraction_count": 289
+    },
+    {
+        "order": 21,
+        "city_id": "13033",
+        "city_name": "山西",
+        "attraction_count": 291
+    },
+    {
+        "order": 22,
+        "city_id": "12967",
+        "city_name": "河南",
+        "attraction_count": 285
+    },
+    {
+        "order": 23,
+        "city_id": "31808",
+        "city_name": "西北",
+        "attraction_count": 285
+    },
+    {
+        "order": 24,
+        "city_id": "12711",
+        "city_name": "云南",
+        "attraction_count": 291
+    },
+    {
+        "order": 25,
+        "city_id": "10320",
+        "city_name": "天津",
+        "attraction_count": 289
+    }
+]

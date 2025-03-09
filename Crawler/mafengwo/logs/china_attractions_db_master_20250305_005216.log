@@ -1,0 +1,126 @@
+2025-03-05 00:52:17 [scrapy.utils.log] INFO: Scrapy 2.12.0 started (bot: mafengwo)
+2025-03-05 00:52:17 [scrapy.utils.log] INFO: Versions: lxml 5.3.1.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.10.0, w3lib 2.3.1, Twisted 24.11.0, Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)], pyOpenSSL 25.0.0 (OpenSSL 3.4.1 11 Feb 2025), cryptography 44.0.1, Platform Windows-11-10.0.26100-SP0
+2025-03-05 00:52:17 [china_attractions_db] INFO: 设置信号处理器
+2025-03-05 00:52:17 [china_attractions_db] INFO: 已注册SIGINT和SIGTERM信号处理器
+2025-03-05 00:52:17 [china_attractions_db] INFO: 爬虫初始化: 节点ID=node1, 是否主节点=True
+2025-03-05 00:52:17 [china_attractions_db] INFO: Redis连接成功初始化，连接到 localhost
+2025-03-05 00:52:17 [china_attractions_db] INFO: 作为主节点初始化队列
+2025-03-05 00:52:17 [china_attractions_db] INFO: 未找到断点续爬检查点文件，将从头开始爬取
+2025-03-05 00:52:17 [china_attractions_db] INFO: 主节点已初始化URL队列，添加起始URL: https://www.mafengwo.cn/mdd/
+2025-03-05 00:52:17 [china_attractions_db] INFO: 已保存爬虫状态: started
+2025-03-05 00:52:17 [china_attractions_db] INFO: 已启动定期保存检查点线程，间隔: 300秒
+2025-03-05 00:52:17 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-03-05 00:52:17 [scrapy.extensions.telnet] INFO: Telnet Password: 18185a8a1e43de04
+2025-03-05 00:52:17 [py.warnings] WARNING: C:\Users\31432\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\extensions\feedexport.py:432: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2025-03-05 00:52:17 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-03-05 00:52:17 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'mafengwo',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_FAIL_ON_DATALOSS': False,
+ 'DOWNLOAD_TIMEOUT': 60,
+ 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_INDENT': 4,
+ 'JOBDIR': 'crawls/china_attractions_db_master',
+ 'LOG_FILE': 'logs/china_attractions_db_master_20250305_005216.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'mafengwo.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 522, 524, 408, 202],
+ 'RETRY_TIMES': 5,
+ 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler',
+ 'SPIDER_MODULES': ['mafengwo.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 '
+               'Edg/133.0.0.0'}
+2025-03-05 00:52:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'mafengwo.middlewares.RandomUserAgentMiddleware',
+ 'mafengwo.middlewares.RandomDelayMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-03-05 00:52:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-03-05 00:52:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_redis.pipelines.RedisPipeline']
+2025-03-05 00:52:18 [china_attractions_db] INFO: 当前队列状态:
+2025-03-05 00:52:18 [china_attractions_db] INFO: 城市列表页URL队列: 1
+2025-03-05 00:52:18 [china_attractions_db] INFO: 景点列表页URL队列: 0
+2025-03-05 00:52:18 [china_attractions_db] INFO: 详情页URL队列: 0
+2025-03-05 00:52:18 [china_attractions_db] INFO: 发现 1 个城市列表页URL，开始处理
+2025-03-05 00:52:18 [china_attractions_db] INFO: 处理城市列表页: https://www.mafengwo.cn/mdd/
+2025-03-05 00:52:18 [china_attractions_db] INFO: 开始爬取城市列表
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将城市 北京 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/10065/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将城市 上海 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/10099/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将城市 重庆 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/10208/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将城市 天津 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/10320/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 在div[1]中找到 6 个省份dl元素
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 云南 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/12711/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 四川 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/12703/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 浙江 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/14575/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 海南 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/12938/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 福建 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/12871/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 江苏 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/14387/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 广东 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/14674/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 广西 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/12810/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 在div[2]中找到 7 个省份dl元素
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 西藏 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/12700/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 贵州 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/14103/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 西北 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/31808/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 山东 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/12976/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 山西 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/13033/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 湖南 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/13732/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 湖北 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/14731/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 安徽 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/12719/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 江西 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/15508/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 河北 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/14407/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 河南 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/12967/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 内蒙古 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/12720/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 已将省份 东北 的景点列表页URL添加到队列: https://www.mafengwo.cn/jd/16215/gonglve.html
+2025-03-05 00:52:42 [china_attractions_db] INFO: 总共解析了 21 个省份
+2025-03-05 00:52:44 [china_attractions_db] INFO: 城市列表页URL队列为空
+2025-03-05 00:52:44 [scrapy.core.engine] INFO: Spider opened
+2025-03-05 00:52:44 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-03-05 00:52:44 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-03-05 00:52:44 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-03-05 00:52:44 [china_attractions_db] INFO: 爬虫关闭，原因: finished
+2025-03-05 00:52:44 [china_attractions_db] INFO: 已停止定期保存检查点线程
+2025-03-05 00:52:44 [china_attractions_db] INFO: 已保存断点续爬检查点: crawls/china_attractions_db_node1/checkpoints\checkpoint_node1_20250305_005244.json
+2025-03-05 00:52:44 [china_attractions_db] INFO: 已保存爬虫状态: closed: finished
+2025-03-05 00:52:44 [china_attractions_db] INFO: 爬虫运行时间: 0:00:27.037765
+2025-03-05 00:52:44 [china_attractions_db] INFO: 爬取统计: 处理城市页面 1 个，处理列表页面 0 个，处理详情页面 0 个
+2025-03-05 00:52:44 [china_attractions_db] INFO: 数据统计: 保存城市 25 个，保存景点 0 个
+2025-03-05 00:52:44 [scrapy.extensions.feedexport] INFO: Stored json feed (0 items) in: attractions_distributed.json
+2025-03-05 00:52:44 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.192486,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 3, 4, 16, 52, 44, 619674, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': None,
+ 'log_count/INFO': 54,
+ 'log_count/WARNING': 1,
+ 'responses_per_minute': None,
+ 'start_time': datetime.datetime(2025, 3, 4, 16, 52, 44, 427188, tzinfo=datetime.timezone.utc)}
+2025-03-05 00:52:44 [scrapy.core.engine] INFO: Spider closed (finished)

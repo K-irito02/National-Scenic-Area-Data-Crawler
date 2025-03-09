@@ -1,0 +1,13 @@
+# 马蜂窝分布式爬虫依赖
+scrapy==2.8.0
+scrapy-redis==0.7.3
+selenium==4.11.2
+redis==4.6.0
+msedge-selenium-tools==3.141.4
+webdriver-manager==4.0.0
+requests==2.31.0
+lxml==4.9.3
+beautifulsoup4==4.12.2
+pillow==10.0.0
+pandas==2.0.3
+tqdm==4.66.1 
