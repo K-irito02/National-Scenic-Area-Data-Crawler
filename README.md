@@ -1,6 +1,6 @@
 # 马蜂窝景点数据分布式爬虫
 
-基于Scrapy-Redis架构的分布式景点数据采集系统，支持全国城市和景点信息的持续爬取。
+基于Scrapy-Redis架构+Selenium的分布式景点数据采集系统，支持全国城市和景点信息的持续爬取。
 
 ## 目录
 
@@ -25,7 +25,7 @@
 
 ## 项目概述
 
-这是一个基于Scrapy和Redis的马蜂窝景点爬虫系统，用于爬取马蜂窝网站上的全国各地景点信息。该系统采用分布式架构，支持多节点并行爬取，使用Redis作为核心数据存储和消息队列，能够实现高效稳定的大规模数据采集。
+这是一个基于Scrapy、Redis、Selenium的马蜂窝景点爬虫系统，用于爬取马蜂窝网站上的全国各地景点信息。该系统采用分布式架构，支持多节点并行爬取，使用Redis作为核心数据存储和消息队列，能够实现高效稳定的大规模数据采集。
 
 本项目特别适合需要获取全国旅游景点数据的研究人员、数据分析师和旅游行业从业者。通过本系统，您可以获取到景点名称、地址、门票信息、开放时间等详细数据，为旅游行业分析和决策提供数据支持。
 
@@ -213,6 +213,7 @@ python run_db_crawler.py --spider china_attractions_db --master --task-type all 
 1. **主节点启动**（负责初始化URL队列 cities）：
 
 ```bash
+# 主节点 - 负责爬取省份景点列表
 python run_db_crawler.py --spider china_attractions_db --master --task-type cities --redis-host localhost --node-id master --monitor
 ```
 
@@ -238,6 +239,7 @@ python run_db_crawler.py --spider china_attractions_db --task-type detail --redi
 - 只需要一个主节点（--master），其他都是工作节点
 - 每个节点需要设置不同的node-id
 - 可以根据需要调整任务类型分配，例如多个节点都执行detail任务
+- 可以根据自己的电脑配置开多个从节点（可以把你的电脑配置等信息给deepseek等AI，询问使用Selenium大概可以开几个浏览器实例）
 
 ### 断点续爬功能
 
